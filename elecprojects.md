@@ -106,3 +106,37 @@ The 9.6V rail was powered by putting 4 diodes in series with the 7812 12V rail. 
 
 ![](https://media.tenor.com/images/44c35ffdfbf34aa3c972a79e47a2a988/tenor.gif)
 
+14) __Bluetooth Wireless Voltage Meter using Wiimote + Pic Chip + AutoIt__
+In this peoject we can see how we can send voltage values to our pc using a Pic chip, Wiimote, and Autoit3 scripting language. The process works by wiring a pic chip to the button pads of a wiimote. Then using the pic chips Analog to Digital Converter, we obtain a 10bit binary value. We will then send that value to Autoit in the form of button presses using the wiimote as a data interface.  On the PC side we will use a library I wrote to receive the data from the wiimote. The library is basically just a port to Wiiuse by Michael Laforest set up in a way to make scripting with the wiimote very easy.
+
+15) __Password Based Door Lock System__
+The main component in the circuit is 8051 controller. In this project, a 4×4 Matrix Keypad is used to enter the password. The password which is entered is compared with the predefined password.
+If the entered password is correct, then the system opens the door by rotating door motor and displays the status of door on LCD. If the password is wrong, then the door is remains closed and displays “PWD is wrong” on LCD.
+Once the circuit is powered ON, microcontroller sends commands to the LCD to display “enter password” on LCD.  Now we need to enter the password using the keypad. Once password is entered, it displays 5 stars on LCD to indicate that controller read password successfully.
+Now the controller compares the entered password with predefined password. If the password is matched, then the microcontroller makes P0.0 HIGH and P0.1 LOW, so the motor driver gets the input signals for forward motion of the motor.
+As a result, the Door Motor rotates in forward direction to open the door. After a delay of 10seconds, the microcontroller makes P0.0 LOW and P0.1 HIGH, so the motor driver gets the input signals for reverse motion. As a result, the Door motor rotates in reverse direction to close the door.
+If the password is not matched, then microcontroller maintains both P0.0 and P0.1 LOW. Hence, the door motor is stationary so that door remains closed.
+
+![](https://www.electronicshub.org/wp-content/uploads/2015/09/Password-Based-Door-Lock-System-Circuit-Diagram.jpg)
+
+16) __The Multimeter Clock__
+
+![](https://pic-microcontroller.com/wp-content/uploads/2015/10/Multimeter-Clock.jpg)
+
+
+The Multimeter Clock consists of three multimeters, the first meter displays hours, the second displays minutes and the last displays seconds. A 16F628A PIC microcontroller keeps track of time and outputs a calculated current to each meter to display the current time.
+Since the clock controller is built onto a perf board you have lots of flexibility on layout. Construct the circuit according to the schematic diagram. The PIC Microcontroller will need to be programmed with the Multimeter Clock firmware using a PIC chip programmer. When powered up the blue LED will give you a visual indication that things are working, during the power up phase the LED will light steady and as soon as the clock is running it will flash on for one second and off for one second.
+The firmware was written in PICBasic Pro so you will need that language if you wish to make changes to the existing functionality. There is still about 20% of the 2K PIC code space still available so there is lots of space for some hacking.
+The meter faces of the multimeters will need to be updated to show time scales. I used a program called MeterBasic by Tonne Software. To make a new meter face all you need to do is enter the measurements of the meter face, the name for the meter and scale information. In the end you have a perfect matching scale for your meter. 
+
+
+17) __Hacking the Xbox CONTROLLER__
+How they install a PIC microcontroller inside of an Xbox controller in order to provide custom functions.At last,all we have to do is go write some code and program a chip!
+Locate and remove the screws.There are seven phillips head screws holding the two halves of the controller together. One of them is hidden underneath the sticker.The easiest way to get to the hidden screw is to feel where it is, then push the screwdriver through.
+Now that you have removed and stored all seven screws, remove the BOTTOM half of the controller. If you remove the top, all the buttons will fall out. The bottom should lift off easily.Now, pull up on the plastic bit that holds the headset and other peripherals. It will slide out, along with the pcb. Be mindful of the rumble motors that are still plugged into the pcb. We’ll disconnect these in a later step.Now that you have removed the pcb, store the top half in a safe place, where you won’t lose any buttons. If they do fall out, putting them back is pretty easy. They all have unique shapes, and they can’t be put in the wrong hole.
+Now we will remove the communicator/peripheral socket and motors to get better access to the board, itself.
+Let’s take the motors off, first. We don’t want the wires to break. The connector is rather like a chinese finger trap. The harder you pull on it, the tighter it gets. The trick to get it out easily is to catch the edge of this ridge with a small screwdriver or a probe/needle of some type.This pesky bit of plastic has four retainer tabs holding it in place. This can be removed easily once you have found them.First notice the white circles? These circles show where the support cylinders on the bottom plastic contact the board. We don’t want any wires to cross these lines.There is room enough to place a small microcontroller here. The trick is to “dead bug” it. This means we are going to place the chip upside down, and affix it to the pcb with hotmelt glue. Notice the proximity to accessible ground and power points, as well as one of the signal traces that I was interested in for this project, namely the trace that carries the signal from the Y button to the main Atmel microcontroller that is the “brain” of this particular controller.
+Look carefully for the yellow highligted boxes that show the Y-button and X-button access points. This is the brain of the controller. All of the button inputs eventually end up here. So why don’t we just solder directly to this chip? Well, when you see how small this chip is, you will know. The average hobbyist doesn’t have the ability to solder to things this small. You can see that the pins are labelled at pin 1, 12, 13, 24, 25, 36, and 48. But I digress.
+Here’s our dead bug. I chose the pic 12f683. The indentation on the chip is pointing down.The Atmel “brain” runs on 5V, as is common with many other microcontrollers, including our PIC, so we just have to find a good place to commandeer. I chose to take power and ground from the peripheral port. Why don’t I use that closer ground point I highlighted earlier? Well, both points are in continuity, but that’s not the whole story. Capacitance at each point may be different, and I don’t want to take any other components on the board out of their specified operating parameter in this regard, especially the precision pots nearby that provide the R thumstick inputs.
+So first, apply a dab of solder to the ground lead.
+
