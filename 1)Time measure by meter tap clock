@@ -1,4 +1,4 @@
-1.**Time measure by meter tape clock**
+1.__Time measure by meter tape clock__
 The idea is to motorize a tape measure and programmed it to move over the course of the day to show the time in hours (inches).
 For this they used stepper motor for the tape and control it with arduino coding. The circuit includes the RTC Chip, H-bridge, Motor and 
 limit switch. They have used the buck converter for constant voltage supply to arduino and 12V to stepper motor.Then they used the 
