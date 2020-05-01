@@ -6,4 +6,5 @@ limit switch. They have used the buck converter for constant voltage supply to a
 The idea of using distance as time is cool as that’s what relativity is.
 
 Circuit:
-![]()
+![image](https://user-images.githubusercontent.com/64602066/80802173-3a8b0500-8bcc-11ea-9f9f-fbc7c6fb2faf.png)
+
