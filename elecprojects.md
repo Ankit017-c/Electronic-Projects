@@ -87,3 +87,20 @@ When the train crosses the gate and reaches second sensor, it detects the train 
 
 
 ![](https://www.electronicshub.org/wp-content/uploads/2015/08/3.png)
+
+
+12)  __Clap-Clap on / Clap-Clap Off switch circuit!__
+This circuit employs some very simple and cheap circuitry, and a simple program. It is relatively easy to make a hardware only clap on/off circuit, but I wanted to create a circuit that required two claps to switch on, and two claps to switch off.  The claps must be in quick succession
+As you can see from the picture below, we have an electret microphone connected to the ground line, and to one end of a 10k resistor.   The other end of the resistor is tied to the 5v line.  when an audio sound is sensed by the micrpphone, it changes that audio signal into a voltage that emulates the tone picked up.  We can use that noise, but first we have to condition it.  To rid ourselves of the DC component, we AC-couple the signal using a coupling capacitor.  This signal will be extremely small, so we must first amplify it.  We are going to do that using a handy-dandy LM324 quad op-amp IC.  This chip has 4x on-board op-amps.  We are only going to use two of them.
+
+![](https://pic-microcontroller.com/wp-content/uploads/2013/01/Schematic-switch-circuit.jpg)
+ 
+The pull-down resistor to the right of the coupling capacitor is necessary for the operation of the non-inverting amplifier stage to work.  In fact, all components in the below diagram are crutial.  The way a non-inverting op-amp works, is it takes two values RA, which is the 1k resistor connected to the (-) input and ground, and RF (100k potentiometer), which is the feedback resistor, which is connected between the (-) input, and the output, and creates a voltage gain factor.  The voltage gain factor (AV) is a multiplier.  Once we determine the AV, we multiply the voltage at the input by the AV, and we have our output voltage.  The 100k pot is used to vary the voltage gain.  This will either increase the sensitivity or decrease the sensitivity of the circuit.  The equation for AV = RF/RA in a non-inverting amplifier circuit.
+
+13) __Wifi robot vehicle__
+ A remote control car that can be driven over the internet or with a laptop wirelessly from up to 500m away. It has a live-feed network camera so that it can be driven without line of sight and a horn so that you can honk at people.
+They originally used the AVR Butterfly development board. It was working fine until the batteries ran low one time. There is an error in the AVR butterfly bootloader detailed here that corrupts the code and doesn't let you reprogram it unless you load a new bootloader.It took quite a while to debug the problem and quite a bit of time to fix it so I scrapped that control system. I also found the output voltages to be unpredictable because the outputs are also driving the integrated peripherals like the LCD screen.
+The 9.6V rail was powered by putting 4 diodes in series with the 7812 12V rail. A diode takes ~0.7V to turn on. By putting 4 in series, we drop ~2.8V across them and now we have 9V for the devices that need less than 12V. After burning the first bunch of transistors I wanted to run the circuit at a lower voltage. The 7812 regulator is only rated for 1A but the motors would drain considerably more than that. Digikey sells a 7.5A 12V regulator for ~$14 which I bought. I attached it to a heat sink because I thought that it may get pretty hot. After quite a bit of use, it doesn't even get warn, so the heat sink was not required.
+Details: ![CAR](http://www.jbprojects.net/projects/wifirobot/)
+![](https://media.tenor.com/images/48b04d8a393568bc4c5a702fe40005cc/tenor.gif)
+
