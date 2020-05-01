@@ -74,6 +74,8 @@ When the concentration increases, the number of LEDs turning on also increases. 
 11) __Automatic Railway Gate Controller__
 The two IR sensors are placed at left and right side of the railway gate. The distance between the two IR sensors is dependent on the length of the train. In general we have to consider the longest train in that route.
 Now we’ll see how this circuit actually works in real time. In this image, we can see the real time representation of this project.
+
+
 ![](https://www.electronicshub.org/wp-content/uploads/2015/08/1.png)
 
 If the sensor 1 detects the arrival of the train, microcontroller starts the motor with the help of motor driver in order to close the gate.
@@ -82,4 +84,6 @@ If the sensor 1 detects the arrival of the train, microcontroller starts the mot
 
 The gate remains closed as the train passes the crossing.
 When the train crosses the gate and reaches second sensor, it detects the train and the microcontroller will open the gate.
+
+
 ![](https://www.electronicshub.org/wp-content/uploads/2015/08/3.png)
