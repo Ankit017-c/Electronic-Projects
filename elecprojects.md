@@ -44,5 +44,7 @@ The main principle used in this circuit is DTMF communication i.e. Dual-Tone Mul
 (The main components in this circuit are DTMF decoder. When we make a call to the mobile which is connected at the receiver end, the MT8870 IC provides high pulse at 15th pin after receiving a valid signal. Now if you press 1 from the mobile the output of the decoder IC at pins Q1, Q2, Q3 and Q4 will be 1, 0, 0 and 0 respectively.(Q1,Q2,Q3,Q4 is marked on DTMF board)As the Q1 pin is connected to the input of the relay, it will be activated and as a result, the load will be turned ON. To turn off the load, press any number that makes Q1 as 0 i.e. 2 for example.)
 
 8) __Car Parking Guard Circuit Using Infrared Sensor__
-
 The IR sensor will detect the obstacle with in 100cm, if there is any obstacle it will sense and give information to the tone detector which will enable the LM555 timer to generate a PWM for the buzzer. The LM555 will generate the pulse which helps to buzz the buzzer so driver can understand that there is an obstacle.
+
+
+![](/images/car%20parking.png)
