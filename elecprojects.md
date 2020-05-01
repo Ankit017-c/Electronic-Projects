@@ -101,6 +101,8 @@ The pull-down resistor to the right of the coupling capacitor is necessary for t
  A remote control car that can be driven over the internet or with a laptop wirelessly from up to 500m away. It has a live-feed network camera so that it can be driven without line of sight and a horn so that you can honk at people.
 They originally used the AVR Butterfly development board. It was working fine until the batteries ran low one time. There is an error in the AVR butterfly bootloader detailed here that corrupts the code and doesn't let you reprogram it unless you load a new bootloader.It took quite a while to debug the problem and quite a bit of time to fix it so I scrapped that control system. I also found the output voltages to be unpredictable because the outputs are also driving the integrated peripherals like the LCD screen.
 The 9.6V rail was powered by putting 4 diodes in series with the 7812 12V rail. A diode takes ~0.7V to turn on. By putting 4 in series, we drop ~2.8V across them and now we have 9V for the devices that need less than 12V. After burning the first bunch of transistors I wanted to run the circuit at a lower voltage. The 7812 regulator is only rated for 1A but the motors would drain considerably more than that. Digikey sells a 7.5A 12V regulator for ~$14 which I bought. I attached it to a heat sink because I thought that it may get pretty hot. After quite a bit of use, it doesn't even get warn, so the heat sink was not required.
-Details: ![CAR](http://www.jbprojects.net/projects/wifirobot/)
+
+![DETAILS](http://www.jbprojects.net/projects/wifirobot/)
+
 ![](https://media.tenor.com/images/44c35ffdfbf34aa3c972a79e47a2a988/tenor.gif)
 
