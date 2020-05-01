@@ -17,4 +17,5 @@ the Schottky diode. The output signal is filtered by the capacitor. This low pow
 indicator like an LED in this case. The signal is amplified using BJT in its common emitter mode.  i.e. the emitter base junction 
 is forward biased and the collector base junction is reverse biased, a small base current results in a larger collector current.
 
-4)__FM bugger__
+4) __FM bugger__
+![](\images\fm%20bugger.png)
