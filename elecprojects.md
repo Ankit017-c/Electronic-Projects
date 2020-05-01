@@ -11,7 +11,6 @@ __Schottky diodes__ are special diodes formed by combining N type semiconductor 
 operating at a high frequency. These diodes have a unique property of conducting at a very low forward voltage between 0.15 to 0.45V.
 This enables the diode to provide high switching speed and better system efficiency.  The low noise is due to the very low reverse 
 recovery time of about 100 per sec.
-
 __Basic Idea__: The signal from mobile phone is a RF signal. When a mobile phone is present near the circuit, the RF signal from the
 mobile induces a voltage in the inductor via mutual induction. This AC signal of high frequency of the order of GHz is rectified by 
 the Schottky diode. The output signal is filtered by the capacitor. This low power signal can be amplified and used to power any 
