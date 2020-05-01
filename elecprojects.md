@@ -61,4 +61,25 @@ When the rain water sensor is completed, it should get connected to the circuit 
 Rain Water Sensor DIYIf there is no rain, the resistance between the contacts will be very high as there will be no conduction between the wires in the sensor.
 ![](https://www.electronicshub.org/wp-content/uploads/2015/08/Rain-Water-Sensor-DIY.jpg)
 If there is rain, the water drops will fall on the rain sensor, which will form a conductive path between the wires and it also decreases the resistance between the contacts.
-As a result, the wires on the sensor board will conduct and trigger the NE555 timer through the transistors circuitry. Once NE555 is triggered, it will make the output pin high and which will make the buzzer to make alarm
+As a result, the wires on the sensor board will conduct and trigger the NE555 timer through the transistors circuitry. Once NE555 is triggered, it will make the output pin high and which will make the buzzer to make alarm.
+
+10) __Alcohol Breathalyzer__
+Breathalyzers are very useful devices in estimating the blood alcohol content of drunk drivers. Police officers often use more advanced and sophisticated testers with digital readings and with printer facility that prints results instantly.
+In this project, a simple breath alcohol tester is designed which indicates the levels of alcohol through a set of 10 LEDs. The working of the circuit is explained below.
+MQ-3 is the main module in the project. It is an alcohol sensor whose conductivity changes according to the concentration of the alcohol.
+The output is given to the signal pin (pin 5) of LM3914, which is an analog voltage sensing IC. According to the value at pin 5, the outputs are activated. For voltages between 0 and 5V, the outputs are activated from 1 to 10.
+When the concentration of alcohol sensed is very less, the analog value will be slightly greater than 0V and hence only first few LEDs will glow.
+When the concentration increases, the number of LEDs turning on also increases. When the concentration of alcohol is at intoxicated level, all the LEDs will be turned on. The sensitivity of the module can be adjusted by the potentiometer.
+
+11) __Automatic Railway Gate Controller__
+The two IR sensors are placed at left and right side of the railway gate. The distance between the two IR sensors is dependent on the length of the train. In general we have to consider the longest train in that route.
+Now we’ll see how this circuit actually works in real time. In this image, we can see the real time representation of this project.
+![](https://www.electronicshub.org/wp-content/uploads/2015/08/1.png)
+
+If the sensor 1 detects the arrival of the train, microcontroller starts the motor with the help of motor driver in order to close the gate.
+
+![](https://www.electronicshub.org/wp-content/uploads/2015/08/2.png)
+
+The gate remains closed as the train passes the crossing.
+When the train crosses the gate and reaches second sensor, it detects the train and the microcontroller will open the gate.
+![](https://www.electronicshub.org/wp-content/uploads/2015/08/3.png)
