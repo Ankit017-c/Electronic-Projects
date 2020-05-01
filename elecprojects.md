@@ -48,3 +48,17 @@ The IR sensor will detect the obstacle with in 100cm, if there is any obstacle i
 
 
 ![](/images/car%20parking.png)
+
+9) __Rain Water Sensor__
+The block diagram of the Rain Alarm Project is shown in the following image. The three main components of the project are the Rain Water Sensor, 555 Timer IC and Buzzer.
+Block Diagram of Rain Water Detector
+![](https://www.electronicshub.org/wp-content/uploads/2013/10/Block-Diagram-of-Rain-Water-Detector.png)
+
+When the Rain Water Sensor detects the Rain, it sends a signal to the 555 Timer. The 555 Timer IC, which is configured in its Astable Mode, will then activate the Buzzer.
+The Rain Water Sensor used in this project is shown in the image below. It is a simple sensor and it is an easy to use tool for detecting rain. It can act as a simple switch, where the switch is normally open and when there is rain, the switch closes.
+Even though Rain Water sensor is the main component in the circuit. We need not to go and buy in the market or online. We can do it ourselves just by taking the piece of Bakelite or Mica board and aluminium wire.
+When the rain water sensor is completed, it should get connected to the circuit and voltage should be passed through the wires.
+Rain Water Sensor DIYIf there is no rain, the resistance between the contacts will be very high as there will be no conduction between the wires in the sensor.
+![](https://www.electronicshub.org/wp-content/uploads/2015/08/Rain-Water-Sensor-DIY.jpg)
+If there is rain, the water drops will fall on the rain sensor, which will form a conductive path between the wires and it also decreases the resistance between the contacts.
+As a result, the wires on the sensor board will conduct and trigger the NE555 timer through the transistors circuitry. Once NE555 is triggered, it will make the output pin high and which will make the buzzer to make alarm
