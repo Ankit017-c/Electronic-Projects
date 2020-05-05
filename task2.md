@@ -14,3 +14,4 @@ This robot can be divided into several parts:
 |Component|Feasibility|Advantages|Disadvantages|
 |---------|-----------|----------|-------------|
 |ADC LM234|Good managing of processing time|Two LM234 can support 8sensors used in project|ADC is that after every conversion, the counter gets RESET and count starts from 0 onwards. So, the conversion time depends on the magnitude of the input signal|
+|AVR Microcontroller|Tough to Program|High performance, high speed and low power consumption.|Only available source is Atmel,fairly low power.|
