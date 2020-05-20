@@ -16,3 +16,7 @@ __Design and 3D Model__ \
 To obtain the three-dimensional (3D) model of the hexapod robot, we will employ the VRML language, developing a robot model using simple geometrical figures. This language allows to obtain a complex model, simply using a group of basic 3D bodies (cubes, spheres, cones, etc.) as shown in figure below. There are many alternatives to develop a 3D model using VRML language: one of them consists in programming it directly using its commands or employing a graphical editor that eases the design. 
 
 ![](https://www.intechopen.com/media/chapter/50860/media/fig5.png)
+
+
+
+[Detailed Reference](https://www.intechopen.com/books/applications-from-engineering-with-matlab-concepts/design-simulation-and-control-of-a-hexapod-robot-in-simscape-multibody)
