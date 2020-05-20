@@ -1,2 +1,8 @@
-__Hexapod__
-__Problem Statement__:To create the orientation and visual representation of Hexapod. 
+__Hexapod__ \\
+__Problem Statement__:To create the orientation and visual representation of Hexapod. \\
+__Simulation__\\
+For the design and simulation we can use the tools available in MATLAB software. In addition, we design and implement a dynamic model (using the Simscape Multibody toolbox) as well as a three-dimensional model of the robot, using Virtual Reality Modeling Language (VRML), that help to visualize the robot’s walking sequence. The data received from the IMU sensors to the microcontrollers is sent to the software code.
+
+
+In order to control the robot there must be some control unit. MCU Atmega2560 was chosen to drive the servomotors and sensors on this robot. All sensors like sonars, LCD display, memory card, GPS module or force-sensitive resistors are connected to it. LCD display is connected by digital pins using integrated Hitachi HD44780 driver, which allows 4-bit or 8-bit mode. The 4-bit mode requires seven I/O pins from the Arduino, while the 8-bit mode requires 11 pins. There are also 18 servomotors connected to digital pins and driven by MCU’s timers. The MCU is integrated on open-source electronic platform Arduino Mega 2560. Arduino board is connected to the Raspberry Pi via USB cable.Raspberry Pi is a miniature computer the size of a credit card, to which a standard monitor, a keyboard and a mouse can be connected. It has extremely low power consumption (max. 3.5 W) and can run linux based operating system Raspbian. There are several models, which differ in RAM, the number of USB ports or GPIO pins. Raspberry Pi is equipped with a USB Wi-Fi dongle, which is connected to a wireless network, and runs Qt [17] client program, which is able to find the IP address of the server and gets connected to it. Sensor data are sent to a computer after successful connection. Client is also capable of reconnect after disconnection. All sensors and servomotors are connected and driven by Arduino board. Servomotors are controlled by MCU’s timer using VarSpeedServo library [18].
+
