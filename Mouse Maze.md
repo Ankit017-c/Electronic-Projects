@@ -13,7 +13,7 @@ __Components__
 1) ATmega32 8-bit RISC Microcontroller
 2) Faulhaber 1524E 6V motor(absence of fatigue, maximum precision and speed, optimum ergonomics.).Much cheaper alternative but less
 precison: N20-6V-600RPM dc motor with encoder.
-3) Ultrasonic Sensors HC-SR04 (explained in Hexapod) ![datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf)
+3) Ultrasonic Sensors HC-SR04 (explained in Hexapod) [datasheet](https://cdn.sparkfun.com/datasheets/Sensors/Proximity/HCSR04.pdf) \
 Cheaper alternative: IR sensors but less reliable and can cause problem due to light intensity.
 4) Power bank as range allows
 
@@ -32,3 +32,5 @@ There are a lot of limitations in infrared sensors, like the inability to use th
 Faulhaber motors has very high precision and its very useful in this constrained enviroment but the major problem is cost. So much cheaper alternative is N20-6V motors with encoders for providing feedback signals to control the speed and overall stability.
 
 We can use power bank in the range allowed and in accord with our voltage requirement. 
+
+[Reference](https://www.scribd.com/doc/28538615/Micromouse-Project-Report)
